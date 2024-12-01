@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-11 09:55:44.171655",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "registrationnumber",
+  "make",
+  "model",
+  "enginenumber",
+  "enginecapacity",
+  "numberofaxles",
+  "sittingcapacity",
+  "createddate",
+  "createdby",
+  "column_break_10",
+  "chassisnumber",
+  "bodytype",
+  "modelnumber",
+  "color",
+  "fuelused",
+  "axledistance",
+  "id",
+  "updateddate",
+  "updatedby",
+  "tareweight",
+  "grossweight",
+  "motorusageid",
+  "ownername",
+  "owneraddress",
+  "ownercategoryid",
+  "motorcategoryid",
+  "covernoteid",
+  "yearofmanufacture"
+ ],
+ "fields": [
+  {
+   "fieldname": "registrationnumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "registrationNumber"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "make"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "model"
+  },
+  {
+   "fieldname": "enginenumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "engineNumber"
+  },
+  {
+   "fieldname": "enginecapacity",
+   "fieldtype": "Data",
+   "label": "engineCapacity"
+  },
+  {
+   "fieldname": "numberofaxles",
+   "fieldtype": "Data",
+   "label": "numberOfAxles"
+  },
+  {
+   "fieldname": "sittingcapacity",
+   "fieldtype": "Data",
+   "label": "sittingCapacity"
+  },
+  {
+   "fieldname": "createddate",
+   "fieldtype": "Data",
+   "label": "createdDate"
+  },
+  {
+   "fieldname": "createdby",
+   "fieldtype": "Data",
+   "label": "createdBy"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chassisnumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "chassisNumber"
+  },
+  {
+   "fieldname": "bodytype",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "bodyType"
+  },
+  {
+   "fieldname": "modelnumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "modelNumber"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "color"
+  },
+  {
+   "fieldname": "fuelused",
+   "fieldtype": "Data",
+   "label": "fuelUsed"
+  },
+  {
+   "fieldname": "axledistance",
+   "fieldtype": "Data",
+   "label": "axleDistance"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "id"
+  },
+  {
+   "fieldname": "updateddate",
+   "fieldtype": "Data",
+   "label": "updatedDate"
+  },
+  {
+   "fieldname": "updatedby",
+   "fieldtype": "Data",
+   "label": "updatedBy"
+  },
+  {
+   "fieldname": "tareweight",
+   "fieldtype": "Data",
+   "label": "tareWeight"
+  },
+  {
+   "fieldname": "grossweight",
+   "fieldtype": "Data",
+   "label": "grossWeight"
+  },
+  {
+   "fieldname": "motorusageid",
+   "fieldtype": "Data",
+   "label": "motorUsageId"
+  },
+  {
+   "fieldname": "ownername",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ownerName"
+  },
+  {
+   "fieldname": "owneraddress",
+   "fieldtype": "Data",
+   "label": "ownerAddress"
+  },
+  {
+   "fieldname": "ownercategoryid",
+   "fieldtype": "Data",
+   "label": "ownerCategoryId"
+  },
+  {
+   "fieldname": "motorcategoryid",
+   "fieldtype": "Data",
+   "label": "motorCategoryId"
+  },
+  {
+   "fieldname": "covernoteid",
+   "fieldtype": "Data",
+   "label": "coverNoteId"
+  },
+  {
+   "fieldname": "yearofmanufacture",
+   "fieldtype": "Data",
+   "label": "yearOfManufacture"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-11 22:48:18.492753",
+ "modified_by": "Administrator",
+ "module": "CSF TZ",
+ "name": "TZ Insurance Vehicle Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

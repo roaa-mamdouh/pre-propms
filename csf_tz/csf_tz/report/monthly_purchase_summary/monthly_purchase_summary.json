@@ -1,0 +1,36 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-06-17 19:54:39.760151",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "",
+ "modified": "2022-06-17 19:54:39.760151",
+ "modified_by": "Administrator",
+ "module": "CSF TZ",
+ "name": "Monthly Purchase Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT YEAR(posting_date) AS \"YEAR\", QUARTER(posting_date) AS \"QUARTER\",\n   MONTHNAME(posting_date) AS \"Month::\",\n   IF(is_return = 0,SUM(base_net_total), 0) as \"TOTAL PURCHASE:Currency:\",\n   IF(is_return = 1,SUM(base_net_total), 0) as \"TOTAL DEBIT NOTES:Currency:\",\n   SUM(base_grand_total) AS \"BASE GRAND TOTAL:Currency:\"\nFROM `tabPurchase Invoice`\nWHERE docstatus = 1\n  AND YEAR(posting_date) = %(year)s\nGROUP BY YEAR(posting_date), QUARTER(posting_date), MONTH(posting_date), is_return\nORDER BY posting_date",
+ "ref_doctype": "Purchase Invoice",
+ "report_name": "Monthly Purchase Summary",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  }
+ ]
+}

@@ -1,0 +1,284 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:covernotenumber",
+ "creation": "2022-05-10 23:24:14.394684",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle",
+  "covernotenumber",
+  "covernotestartdate",
+  "covernoteenddate",
+  "stickernumber",
+  "covernotereferencenumber",
+  "productname",
+  "classofbusiness",
+  "transactingcompany",
+  "transactingcompanytype",
+  "covernotedescription",
+  "officername",
+  "column_break_5",
+  "ismotor",
+  "isfleet",
+  "statustitle",
+  "currencycode",
+  "totalpremiumamountexcludingtax",
+  "totalpremiumamountincludingtax",
+  "commisionrate",
+  "exchangerate",
+  "commisionpaid",
+  "vat",
+  "operativeclause",
+  "officertitle",
+  "fleetidentificationnumber",
+  "fleetsize",
+  "premiumlevy",
+  "section_break_28",
+  "insurance_motors",
+  "section_break_30",
+  "insurance_provider",
+  "section_break_31",
+  "policy_holders"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "Vehicle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "covernotenumber",
+   "fieldtype": "Data",
+   "label": "coverNoteNumber",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "covernotestartdate",
+   "fieldtype": "Data",
+   "label": "coverNoteStartDate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "covernoteenddate",
+   "fieldtype": "Data",
+   "label": "coverNoteEndDate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statustitle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "statusTitle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stickernumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "stickerNumber",
+   "read_only": 1
+  },
+  {
+   "fieldname": "covernotereferencenumber",
+   "fieldtype": "Data",
+   "label": "coverNoteReferenceNumber",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operativeclause",
+   "fieldtype": "Data",
+   "label": "operativeClause",
+   "read_only": 1
+  },
+  {
+   "fieldname": "covernotedescription",
+   "fieldtype": "Data",
+   "label": "coverNoteDescription",
+   "length": 1000,
+   "read_only": 1
+  },
+  {
+   "fieldname": "officername",
+   "fieldtype": "Data",
+   "label": "officerName",
+   "read_only": 1
+  },
+  {
+   "fieldname": "officertitle",
+   "fieldtype": "Data",
+   "label": "officerTitle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fleetidentificationnumber",
+   "fieldtype": "Data",
+   "label": "fleetIdentificationNumber",
+   "read_only": 1
+  },
+  {
+   "fieldname": "currencycode",
+   "fieldtype": "Data",
+   "label": "currencyCode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "totalpremiumamountexcludingtax",
+   "fieldtype": "Currency",
+   "label": "totalPremiumAmountExcludingTax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commisionpaid",
+   "fieldtype": "Currency",
+   "label": "commisionPaid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Data",
+   "label": "Vat",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ismotor",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "isMotor",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "isfleet",
+   "fieldtype": "Check",
+   "label": "isFleet",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fleetsize",
+   "fieldtype": "Data",
+   "label": "fleetSize",
+   "read_only": 1
+  },
+  {
+   "fieldname": "exchangerate",
+   "fieldtype": "Currency",
+   "label": "exchangeRate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "totalpremiumamountincludingtax",
+   "fieldtype": "Currency",
+   "label": "totalPremiumAmountIncludingTax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commisionrate",
+   "fieldtype": "Currency",
+   "label": "commisionRate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "premiumlevy",
+   "fieldtype": "Data",
+   "label": "premiumLevy",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "productname",
+   "fieldtype": "Data",
+   "label": "productName",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transactingcompany",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "transactingCompany",
+   "read_only": 1
+  },
+  {
+   "fieldname": "classofbusiness",
+   "fieldtype": "Data",
+   "label": "classOfBusiness",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transactingcompanytype",
+   "fieldtype": "Data",
+   "label": "transactingCompanyType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "insurance_motors",
+   "fieldtype": "Table",
+   "options": "TZ Insurance Vehicle Detail",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break",
+   "label": "Insurance Provider Details"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break",
+   "label": "Policy Holder Details"
+  },
+  {
+   "fieldname": "insurance_provider",
+   "fieldtype": "Table",
+   "options": "TZ Insurance Company Detail",
+   "read_only": 1
+  },
+  {
+   "fieldname": "policy_holders",
+   "fieldtype": "Table",
+   "options": "TZ Insurance Policy Holder Detail",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-12 10:49:58.898715",
+ "modified_by": "Administrator",
+ "module": "CSF TZ",
+ "name": "TZ Insurance Cover Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "vehicle",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

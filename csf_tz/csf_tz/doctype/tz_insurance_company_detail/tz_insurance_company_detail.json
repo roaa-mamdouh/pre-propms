@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-11 10:11:22.494704",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "createddate",
+  "updateddate",
+  "createdby",
+  "updatedby",
+  "id",
+  "companycode",
+  "companynumber",
+  "companytypeid",
+  "companyname",
+  "businesstypeid",
+  "incorporationcertificatenumber",
+  "numberlocalstaff",
+  "numberforeignstaff",
+  "totalshareowned",
+  "totalsharealloted",
+  "column_break_16",
+  "incorporationdate",
+  "initialregistrationdate",
+  "businesscommencementdate",
+  "countryid",
+  "regionid",
+  "districtid",
+  "locationstreet",
+  "companyphone1",
+  "companyphone2",
+  "companyphone3",
+  "companyfax",
+  "postaladdress",
+  "emailaddress",
+  "statusid",
+  "smsnotification",
+  "emailnotification",
+  "shareholders"
+ ],
+ "fields": [
+  {
+   "fieldname": "createddate",
+   "fieldtype": "Data",
+   "label": "createdDate"
+  },
+  {
+   "fieldname": "updateddate",
+   "fieldtype": "Data",
+   "label": "updatedDate"
+  },
+  {
+   "fieldname": "createdby",
+   "fieldtype": "Data",
+   "label": "createdBy"
+  },
+  {
+   "fieldname": "updatedby",
+   "fieldtype": "Data",
+   "label": "updatedBy"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "ID"
+  },
+  {
+   "fieldname": "companycode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "companyCode"
+  },
+  {
+   "fieldname": "companynumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "companyNumber"
+  },
+  {
+   "fieldname": "companytypeid",
+   "fieldtype": "Data",
+   "label": "companyTypeId"
+  },
+  {
+   "fieldname": "businesstypeid",
+   "fieldtype": "Data",
+   "label": "businessTypeId"
+  },
+  {
+   "fieldname": "companyname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "companyName"
+  },
+  {
+   "fieldname": "incorporationcertificatenumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "incorporationCertificateNumber"
+  },
+  {
+   "fieldname": "numberlocalstaff",
+   "fieldtype": "Data",
+   "label": "numberLocalStaff"
+  },
+  {
+   "fieldname": "numberforeignstaff",
+   "fieldtype": "Data",
+   "label": "numberForeignStaff"
+  },
+  {
+   "fieldname": "totalshareowned",
+   "fieldtype": "Data",
+   "label": "totalShareOwned"
+  },
+  {
+   "fieldname": "totalsharealloted",
+   "fieldtype": "Data",
+   "label": "totalShareAlloted"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "incorporationdate",
+   "fieldtype": "Data",
+   "label": "incorporationDate"
+  },
+  {
+   "fieldname": "initialregistrationdate",
+   "fieldtype": "Data",
+   "label": "initialRegistrationDate"
+  },
+  {
+   "fieldname": "businesscommencementdate",
+   "fieldtype": "Data",
+   "label": "businessCommencementDate"
+  },
+  {
+   "fieldname": "countryid",
+   "fieldtype": "Data",
+   "label": "countryId"
+  },
+  {
+   "fieldname": "regionid",
+   "fieldtype": "Data",
+   "label": "regionId"
+  },
+  {
+   "fieldname": "districtid",
+   "fieldtype": "Data",
+   "label": "districtId"
+  },
+  {
+   "fieldname": "locationstreet",
+   "fieldtype": "Data",
+   "label": "locationStreet"
+  },
+  {
+   "fieldname": "companyphone1",
+   "fieldtype": "Data",
+   "label": "companyPhone1"
+  },
+  {
+   "fieldname": "companyphone2",
+   "fieldtype": "Data",
+   "label": "companyPhone2"
+  },
+  {
+   "fieldname": "companyphone3",
+   "fieldtype": "Data",
+   "label": "companyPhone3"
+  },
+  {
+   "fieldname": "companyfax",
+   "fieldtype": "Data",
+   "label": "companyFax"
+  },
+  {
+   "fieldname": "postaladdress",
+   "fieldtype": "Data",
+   "label": "postalAddress"
+  },
+  {
+   "fieldname": "emailaddress",
+   "fieldtype": "Data",
+   "label": "emailAddress"
+  },
+  {
+   "fieldname": "statusid",
+   "fieldtype": "Data",
+   "label": "statusId"
+  },
+  {
+   "fieldname": "smsnotification",
+   "fieldtype": "Data",
+   "label": "smsNotification"
+  },
+  {
+   "fieldname": "emailnotification",
+   "fieldtype": "Data",
+   "label": "emailNotification"
+  },
+  {
+   "fieldname": "shareholders",
+   "fieldtype": "Data",
+   "label": "shareholders",
+   "length": 1000
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-11 22:30:32.415238",
+ "modified_by": "Administrator",
+ "module": "CSF TZ",
+ "name": "TZ Insurance Company Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

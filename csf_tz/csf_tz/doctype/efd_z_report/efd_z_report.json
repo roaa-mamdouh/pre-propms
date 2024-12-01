@@ -1,0 +1,364 @@
+{
+ "actions": [],
+ "autoname": "format:{electronic_fiscal_device}-{z_no}",
+ "creation": "2019-08-14 11:15:03.370491",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "electronic_fiscal_device",
+  "z_no",
+  "money",
+  "column_break_5",
+  "z_report_date_time",
+  "receipts_issued",
+  "section_break_7",
+  "net_amount",
+  "total_vat",
+  "total_turnover_ex_sr",
+  "total_turnover",
+  "allowable_difference",
+  "column_break_13",
+  "total_excluding_vat_ticked",
+  "total_vat_ticked",
+  "total_turnover_exempted__sp_relief_ticked",
+  "total_turnover_ticked",
+  "vat_section",
+  "get_invoices",
+  "efd_z_report_invoices",
+  "section_break_10",
+  "vat_a_18",
+  "a_turnover",
+  "vat_b_10",
+  "b_turnover",
+  "html_11",
+  "c_turnover",
+  "html_13",
+  "d_turnover",
+  "html_15",
+  "e_turnover",
+  "column_break_12",
+  "html_18",
+  "a_net_sum",
+  "html_20",
+  "b_net_sum",
+  "html_22",
+  "c_net_sum",
+  "html_24",
+  "d_net_sum",
+  "column_break_17",
+  "html_27",
+  "a_vat",
+  "html_29",
+  "b_vat",
+  "html_31",
+  "c_vat",
+  "html_33",
+  "d_vat",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "description": "&nbsp;",
+   "fieldname": "electronic_fiscal_device",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Electronic Fiscal Device",
+   "options": "Electronic Fiscal Device",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "depends_on": "eval: doc.electronic_fiscal_device",
+   "fieldname": "z_no",
+   "fieldtype": "Data",
+   "label": "Z No",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "money",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Money"
+  },
+  {
+   "depends_on": "eval: doc.electronic_fiscal_device",
+   "fieldname": "receipts_issued",
+   "fieldtype": "Int",
+   "label": "Receipts Issued",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_turnover",
+   "fieldtype": "Currency",
+   "label": "Total Turnover",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Excluding VAT"
+  },
+  {
+   "fieldname": "total_vat",
+   "fieldtype": "Currency",
+   "label": "Total VAT"
+  },
+  {
+   "fieldname": "total_turnover_ex_sr",
+   "fieldtype": "Currency",
+   "label": "Total Turnover Exempted / Sp. Relief"
+  },
+  {
+   "depends_on": "eval: doc.z_no",
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "depends_on": "eval: doc.electronic_fiscal_device",
+   "description": "From FM Summary section in the bottom part of the Z Report",
+   "fieldname": "z_report_date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Z Report Date Time",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.receipts_issued",
+   "fieldname": "vat_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_invoices",
+   "fieldtype": "Button",
+   "label": "Get Invoices"
+  },
+  {
+   "fieldname": "efd_z_report_invoices",
+   "fieldtype": "Table",
+   "label": "EFD Z Report Invoices",
+   "options": "EFD Z Report Invoice"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "vat_a_18",
+   "fieldtype": "HTML",
+   "options": "<strong>VAT A (18.00%)</strong>"
+  },
+  {
+   "fieldname": "a_turnover",
+   "fieldtype": "Currency",
+   "label": "Turnover"
+  },
+  {
+   "fieldname": "vat_b_10",
+   "fieldtype": "HTML",
+   "options": "<strong>VAT B (10.00%)</strong>"
+  },
+  {
+   "fieldname": "b_turnover",
+   "fieldtype": "Currency",
+   "label": "Turnover"
+  },
+  {
+   "fieldname": "html_11",
+   "fieldtype": "HTML",
+   "options": "<strong>VAT C (0.00%)</strong>"
+  },
+  {
+   "fieldname": "c_turnover",
+   "fieldtype": "Currency",
+   "label": "Turnover"
+  },
+  {
+   "fieldname": "html_13",
+   "fieldtype": "HTML",
+   "options": "<strong>VAT D (SR)</strong>"
+  },
+  {
+   "fieldname": "d_turnover",
+   "fieldtype": "Currency",
+   "label": "Turnover"
+  },
+  {
+   "fieldname": "html_15",
+   "fieldtype": "HTML",
+   "options": "<strong>VAT (EX.)</strong>"
+  },
+  {
+   "fieldname": "e_turnover",
+   "fieldtype": "Currency",
+   "label": "Turnover"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_18",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "a_net_sum",
+   "fieldtype": "Currency",
+   "label": "Net Sum"
+  },
+  {
+   "fieldname": "html_20",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "b_net_sum",
+   "fieldtype": "Currency",
+   "label": "Net Sum"
+  },
+  {
+   "fieldname": "html_22",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "c_net_sum",
+   "fieldtype": "Currency",
+   "label": "Net Sum"
+  },
+  {
+   "fieldname": "html_24",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "d_net_sum",
+   "fieldtype": "Currency",
+   "label": "Net Sum"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_27",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "a_vat",
+   "fieldtype": "Currency",
+   "label": "VAT"
+  },
+  {
+   "fieldname": "html_29",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "b_vat",
+   "fieldtype": "Currency",
+   "label": "VAT"
+  },
+  {
+   "fieldname": "html_31",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "c_vat",
+   "fieldtype": "Currency",
+   "label": "VAT"
+  },
+  {
+   "fieldname": "html_33",
+   "fieldtype": "HTML",
+   "options": "<strong>&nbsp;</strong>"
+  },
+  {
+   "fieldname": "d_vat",
+   "fieldtype": "Currency",
+   "label": "VAT"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "EFD Z Report",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_excluding_vat_ticked",
+   "fieldtype": "Currency",
+   "label": "Total Excluding VAT (Ticked)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_vat_ticked",
+   "fieldtype": "Currency",
+   "label": "Total VAT (Ticked)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_turnover_exempted__sp_relief_ticked",
+   "fieldtype": "Currency",
+   "label": "Total Turnover Exempted / Sp. Relief (Ticked)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_turnover_ticked",
+   "fieldtype": "Currency",
+   "label": "Total Turnover (Ticked)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "allowable_difference",
+   "fieldtype": "Currency",
+   "label": "Allowable difference"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-19 11:50:02.474969",
+ "modified_by": "Administrator",
+ "module": "CSF TZ",
+ "name": "EFD Z Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

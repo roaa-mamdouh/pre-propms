@@ -1,0 +1,57 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-11-19 15:31:31.353224",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "mandatory": 1,
+   "options": "Bank Account",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "",
+ "modified": "2022-11-19 15:35:28.440462",
+ "modified_by": "Administrator",
+ "module": "CSF TZ",
+ "name": "Bank Ledger Summary",
+ "owner": "info@aakvatech.com",
+ "prepared_report": 0,
+ "query": "SELECT b.account AS \"Account:Link/Account:\", MONTH(posting_date) AS \"Month:Data:\",\n        COUNT(*) AS \"Count of Transactions:Int:\", SUM(debit_in_account_currency) AS \"Deposit:Currency/currency:\",\n        SUM(credit_in_account_currency) AS \"Withdrawal:Currency/currency:\",\n        account_currency AS \"currency\"\nFROM `tabGL Entry` gle\nINNER JOIN `tabBank Account` b ON b.name = %(bank_account)s AND gle.account = b.account\nWHERE gle.posting_date BETWEEN %(from_date)s AND %(to_date)s\n   AND gle.docstatus = 1\n   AND gle.is_cancelled = 0\nGROUP BY MONTH(posting_date)",
+ "ref_doctype": "GL Entry",
+ "report_name": "Bank Ledger Summary",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Auditor"
+  }
+ ]
+}
